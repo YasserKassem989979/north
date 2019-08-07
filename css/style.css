@@ -9,7 +9,8 @@ body {
 
 .navigation__nav {
   padding: 2rem 0;
-  position: relative; }
+  position: relative;
+  z-index: 1000; }
 
 .navigation__list {
   list-style: none;
@@ -36,3 +37,14 @@ body {
     border-bottom: 1px solid black;
     color: black;
     font-weight: 400; }
+
+.mountain__logo-box {
+  font-family: 'Pompiere', cursive;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 9rem; }
+
+.mountain__logo {
+  display: inline-block;
+  font-size: 5.5rem; }

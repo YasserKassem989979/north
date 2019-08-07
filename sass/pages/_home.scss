@@ -1,0 +1,16 @@
+.mountain{
+    &__logo-box{
+        font-family: 'Pompiere', cursive;
+        width: 50%;
+        position: absolute;
+        top:1rem;
+        left:9rem
+        
+    }
+
+    &__logo{
+        display: inline-block;
+        font-size: 5.5rem;
+        
+    }
+}
