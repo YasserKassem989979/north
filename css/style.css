@@ -2,4 +2,37 @@ html {
   font-size: 62.5%; }
 
 body {
-  padding: 3rem; }
+  margin: 0;
+  padding: 1rem 3rem;
+  font-family: 'Muli', sans-serif;
+  color: #2c2c2c; }
+
+.navigation__nav {
+  padding: 2rem 0;
+  position: relative; }
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.navigation__item {
+  display: inline-block;
+  text-align: center; }
+  .navigation__item:not(:last-child) {
+    margin-right: 1rem; }
+
+.navigation__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  padding-bottom: 0.5rem; }
+  .navigation__link:focus {
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: 400; }

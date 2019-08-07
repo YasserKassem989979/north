@@ -1,0 +1,42 @@
+.navigation{
+    &__nav{
+        // background-color: $color-black;
+        padding: 2rem 0;
+        position: relative;
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__item{
+        display: inline-block;
+        text-align: center;
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__link{
+    
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-gray;
+        padding-bottom: 0.5rem;
+
+        &:focus{
+            border-bottom: 1px solid $color-black;
+            color: $color-black;
+            font-weight: 400;
+           
+        }
+    }
+}
