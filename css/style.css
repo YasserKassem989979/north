@@ -7,6 +7,17 @@ body {
   font-family: 'Muli', sans-serif;
   color: #2c2c2c; }
 
+.section-2-of-home {
+  padding: 10% 0;
+  height: 100vh; }
+
+.section-3 {
+  padding: 4rem 0;
+  margin-top: 40%; }
+
+.container {
+  margin-top: 45%; }
+
 .navigation__nav {
   padding: 2rem 0;
   position: relative;
@@ -18,7 +29,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; }
 
 .navigation__item {
   display: inline-block;
@@ -38,13 +51,137 @@ body {
     color: black;
     font-weight: 400; }
 
-.mountain__logo-box {
-  font-family: 'Pompiere', cursive;
-  width: 50%;
-  position: absolute;
-  top: 1rem;
-  left: 9rem; }
+@media screen and (max-width: 400px) {
+  .navigation__link {
+    font-size: 1.2rem; } }
 
-.mountain__logo {
-  display: inline-block;
-  font-size: 5.5rem; }
+.mountain {
+  position: relative;
+  padding: 4rem 0; }
+  .mountain__logo-box {
+    font-family: 'Pompiere', cursive;
+    width: 50%;
+    position: absolute;
+    top: -5rem;
+    left: 5%; }
+  .mountain__logo {
+    display: inline-block;
+    font-size: 5.5rem;
+    color: #209fdb;
+    font-weight: 300; }
+  .mountain__caption {
+    text-align: center;
+    margin-top: 10rem; }
+  .mountain__heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #209fdb;
+    margin-bottom: -.85rem; }
+  .mountain__img {
+    width: 85%; }
+
+.bird {
+  position: relative;
+  padding: 4rem 0; }
+  .bird__img {
+    width: 60%;
+    position: absolute;
+    right: 7.5%;
+    z-index: -1; }
+  .bird__caption {
+    z-index: 1;
+    position: absolute;
+    top: 3rem;
+    left: 15%; }
+  .bird__text {
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    color: #209fdb; }
+  .bird__span--1 {
+    display: block; }
+  .bird__span--2 {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400; }
+  .bird__span--3 {
+    display: block; }
+
+.greenroom {
+  position: relative; }
+  .greenroom__img {
+    width: 60%;
+    position: absolute;
+    left: 7.5%;
+    z-index: -1; }
+  .greenroom__caption {
+    z-index: 1;
+    position: absolute;
+    top: 2.5rem;
+    right: 8%; }
+  .greenroom__text {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #209fdb; }
+  .greenroom__span--1 {
+    display: block; }
+  .greenroom__span--2 {
+    display: block;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 100%;
+    left: 42%; }
+  .greenroom__span--3 {
+    display: block; }
+
+.redefine {
+  position: relative; }
+  .redefine__img {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 7.5%; }
+  .redefine__caption {
+    position: absolute;
+    top: 8rem;
+    left: 11%; }
+  .redefine__text {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #209fdb; }
+  .redefine__span--1 {
+    display: block; }
+  .redefine__span--2 {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 200; }
+
+@media screen and (max-width: 900px) {
+  .mountain__logo-box {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center; }
+  .mountain__heading {
+    font-size: 1.4rem;
+    margin-bottom: 0rem; }
+  .bird__caption {
+    left: 0%; }
+  .bird__text {
+    font-size: 1.4rem; }
+  .bird__span--2 {
+    font-size: 0.7rem; }
+  .greenroom__caption {
+    right: 0%; }
+  .greenroom__text {
+    font-size: 1.4rem; }
+  .greenroom__span--2 {
+    font-size: 0.8rem; }
+  .redefine__text {
+    font-size: 1.4rem; }
+  .redefine__caption {
+    position: absolute;
+    top: 0rem;
+    left: 0rem; } }
