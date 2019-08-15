@@ -13,7 +13,7 @@
 
     &__logo{
         display: inline-block;
-        font-size: 5.5rem;
+        font-size: 6rem;
         color:$color-primary;
         font-weight: 300;
         
@@ -46,19 +46,27 @@
 // bird section styling
 
 .bird{
-    position: relative;
+    
     padding: 4rem 0;
+    
+
+    &__box__img{
+        width: 100%;
+        position: relative;
+        
+    }
     &__img{
         width: 60%;
-        position: absolute;
-        right: 7.5%;
         z-index: -1;
+        position: absolute;
+        top:0;
+        right: 7.5%;
     }
 
     &__caption{
         z-index: 1;
+        width: 50%;
         position: absolute;
-        top:3rem;
         left: 15%;
     }
 
@@ -110,7 +118,7 @@
         letter-spacing: 1px;
         color: $color-primary;
         // font-weight: 700;
-        // position: relative;
+        position: relative;
 
     }
 
@@ -134,8 +142,11 @@
 }
 
 
+
+
 .redefine{
     position: relative;
+    margin-top: 40%;
     &__img{
         width:45%;
         position: absolute;
@@ -147,7 +158,7 @@
     &__caption{
         position: absolute;
         top: 8rem;
-        left: 11%;
+        left: 15%;
     }
 
     &__text{
@@ -169,8 +180,93 @@
        }
 }
 
+.blue__quote{
+    margin-top: 88%;
+    background-color: #209fdb;
+    padding: 4rem 0;
 
-@media screen and (max-width: 900px){
+    &__img{
+        width: 100%;
+      
+    }
+
+};
+
+
+.lamp{
+    
+    padding: 4rem 0;
+    position: relative;
+    margin-top: 8rem;
+    
+
+    &__box__img{
+        width: 100%;
+        
+        
+    }
+    &__img{
+        width: 60%;
+        z-index: -1;
+        position: absolute;
+        top:0;
+        right: 7.5%;
+    }
+
+    &__caption{
+        z-index: 1;
+        width: 37rem;
+        position: absolute;
+        left: 15%;
+    }
+
+    &__caption--2{
+        z-index: 1;
+        width: 50%;
+        position: absolute;
+        left: 15%;
+        top: 28rem;
+    }
+
+    &__text{
+        font-size: 4.5rem;
+     
+        letter-spacing: 1px;
+        color: $color-primary;
+        
+        color:$color-primary-dark;
+        position: relative;
+    }
+
+    &__span--1{
+        display: block;
+        
+    }
+
+    &__span--2{
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    &__span--3{
+        display: block;
+    }
+
+    &__span--4{
+        display: block;
+        font-family: 'Permanent Marker', cursive;
+        color:$color-primary;
+        font-size: 6rem;
+        position: absolute;
+        top:57%;
+        left: 38%;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
     .mountain__logo-box{
         position: absolute;
         top:0%;
@@ -179,16 +275,16 @@
         text-align: center;
     }
     .mountain__heading{
-        font-size: 1.4rem;
+        font-size:1.7rem;
         margin-bottom: 0rem;
     }
 
     .bird__caption{
-        left: 0%;
+        // left: 0%;
     }
 
     .bird__text{
-        font-size: 1.4rem;
+        font-size:1.7rem;
     }
 
     .bird__span--2{
@@ -196,11 +292,12 @@
     }
 
     .greenroom__caption{
-        right: 0%;
+        top:0%;
+        right:0%;
     }
 
     .greenroom__text{
-        font-size: 1.4rem;
+        font-size:1.7rem;
     }
 
     .greenroom__span--2{
@@ -208,11 +305,47 @@
     }
 
     .redefine__text{
-        font-size: 1.4rem;
+        font-size:1.7rem;
     }
     .redefine__caption{
         position: absolute;
         top: 0rem;
         left: 0rem;
+    }
+
+    .lamp{
+        &__text{
+            font-size: 1rem
+        };
+        &__span--2{
+            font-size: 1.4rem;
+        }
+
+        &__caption--2{
+            top:10rem;
+            font-weight: bold;
+            left: 0;
+            top:10rem;
+        }
+
+        &__caption{
+            z-index: 1;
+            width: 37rem;
+            position: absolute;
+            left: 0;
+            /* display: inline-block; */
+            width: 50%;
+            top: 0rem;
+        }
+
+        &__span--4{
+            display: block;
+    font-family: 'Permanent Marker', cursive;
+    color: #209fdb;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 63%;
+    left: 57%;
+        }
     }
 }
