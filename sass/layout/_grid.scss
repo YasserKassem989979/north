@@ -19,6 +19,7 @@
 
     .col-1-of-2{
         width:calc((100% - #{$guttter-horizntal})/2);
+        // position: relative;
        
     }
 

@@ -12,10 +12,11 @@
     }
 
     &__logo{
-        display: inline-block;
-        font-size: 6rem;
-        color:$color-primary;
-        font-weight: 300;
+        // display: inline-block;
+        // font-size: 6rem;
+        // color:$color-primary;
+        // font-weight: 300;
+        width: 50%;
         
     }
 
@@ -182,8 +183,9 @@
 
 .blue__quote{
     margin-top: 88%;
+    margin-bottom: 15%;
     background-color: #209fdb;
-    padding: 4rem 0;
+    padding: 2rem 0;
 
     &__img{
         width: 100%;
@@ -191,6 +193,8 @@
     }
 
 };
+
+
 
 
 .lamp{
@@ -262,8 +266,161 @@
         top:57%;
         left: 38%;
     }
+};
+
+
+.anytime{
+    margin-top: 47%;
+    padding: 4rem 0;
+    text-align: center;
+
+    &__img{
+        width: 85%;
+      
+    }
+
+};
+
+
+
+.work{
+    // margin-top: 47%;
+    // padding: 4rem 0;
+    // text-align: center;
+    // // margin-left: 5%;
+    // margin-left: 6rem;
+
+    &__img{
+        width: 100%;
+    }
+    
+    
+    // &__circle{
+    //     float: left;
+        
+    //    padding-left: 1rem;
+    //     padding-top:4rem; 
+        
+
+    //     span{
+    //         background-color: $color-primary-dark;
+    //         border-radius: 50%;
+    //         width: 80px;
+    //         height: 80px;
+    //         display: inline-block;
+    //         &:not(:last-child){
+    //             margin-right: 30px;
+    //         };
+            
+    //         font-size: 4rem;
+    //         color: white;
+    //     }
+    // }
+
+    // &__circle--1{
+    //     float: left;
+    //     padding-top:2rem; 
+    //     font-size: 1.2rem;
+    //     text-transform: uppercase;
+    //     color: $color-primary-dark;
+    //     font-weight: bold;
+    //     padding-left: 1rem;
+        
+
+    //     span{
+    //         border-radius: 50%;
+    //         width: 80px;
+    //         height: 80px;
+    //         display: inline-block;
+    //         &:not(:last-child){
+    //             margin-right: 30px;
+    //         }
+            
+    //     }
+    // }
+
+    // &__text{
+    //     font-size: 1.2rem;
+    //     width: 30rem;
+    //     margin-bottom:6%; 
+    //     padding-left: 3rem;
+    //     color: $color-primary;
+    //     &-span{
+    //         display: block;
+    //         background-color: $color-primary-dark;
+    //         color: white;
+    //         font-size: 2rem;
+    //         font-weight: bold;
+    //         padding: 2px 3px;
+    //         width:14rem;
+    //         transform: translateY(-1rem) rotate(-5deg)
+    //     } 
+    // }
+};
+
+.fa{
+    padding: 2rem 0;
 }
 
+
+.contact{
+    text-align: center;
+    position: relative;
+    padding:0rem 0 30rem 0;
+   
+    
+
+    &__name,
+    &__email,
+    &__message{
+        display: block;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        
+    }
+
+    &__name{
+        margin-top: -10rem;
+        width: 300px;
+    }
+
+    &__email{
+        margin-top: -6rem;
+        width: 300px;
+    }
+
+    &__message{
+        margin-top:2rem;
+        height: 100px;
+        width: 300px;
+    };
+    &__heading{
+        font-size: 2rem;
+        background-color: $color-primary-dark;
+        display: inline-block;
+        color: white;
+        padding: 1rem 2rem;
+        transform: rotate(-5deg)
+    }
+
+    &__submit{
+        position: absolute;
+        top:80%;
+        left:45%;
+        text-decoration: none;
+        border:none;
+        padding:1rem 2rem;
+        background-color: $color-primary;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $color-primary-dark
+        }
+    }
+}
 
 
 @media screen and (max-width: 800px){
@@ -277,11 +434,16 @@
     .mountain__heading{
         font-size:1.7rem;
         margin-bottom: 0rem;
+    };
+
+    .mountain__logo{
+        width: 90%;
+        margin-top: 5%;
     }
 
-    .bird__caption{
-        // left: 0%;
-    }
+    // .bird__caption{
+    //     // left: 0%;
+    // }
 
     .bird__text{
         font-size:1.7rem;
@@ -347,5 +509,9 @@
     top: 63%;
     left: 57%;
         }
+    }
+
+    .contact__submit{
+        left:33%;
     }
 }

@@ -55,6 +55,27 @@ body {
   .navigation__link {
     font-size: 1.2rem; } }
 
+.row {
+  max-width: 1140px;
+  color: black;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 3rem; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 1rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 1rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 1rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 1rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 1rem) / 4) + 1rem); }
+
 .mountain {
   position: relative;
   padding: 4rem 0; }
@@ -65,10 +86,7 @@ body {
     top: -5rem;
     left: 5%; }
   .mountain__logo {
-    display: inline-block;
-    font-size: 6rem;
-    color: #209fdb;
-    font-weight: 300; }
+    width: 50%; }
   .mountain__caption {
     text-align: center;
     margin-top: 10rem; }
@@ -164,8 +182,9 @@ body {
 
 .blue__quote {
   margin-top: 88%;
+  margin-bottom: 15%;
   background-color: #209fdb;
-  padding: 4rem 0; }
+  padding: 2rem 0; }
   .blue__quote__img {
     width: 100%; }
 
@@ -215,6 +234,59 @@ body {
     top: 57%;
     left: 38%; }
 
+.anytime {
+  margin-top: 47%;
+  padding: 4rem 0;
+  text-align: center; }
+  .anytime__img {
+    width: 85%; }
+
+.work__img {
+  width: 100%; }
+
+.fa {
+  padding: 2rem 0; }
+
+.contact {
+  text-align: center;
+  position: relative;
+  padding: 0rem 0 30rem 0; }
+  .contact__name, .contact__email, .contact__message {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .contact__name {
+    margin-top: -10rem;
+    width: 300px; }
+  .contact__email {
+    margin-top: -6rem;
+    width: 300px; }
+  .contact__message {
+    margin-top: 2rem;
+    height: 100px;
+    width: 300px; }
+  .contact__heading {
+    font-size: 2rem;
+    background-color: #223f6a;
+    display: inline-block;
+    color: white;
+    padding: 1rem 2rem;
+    transform: rotate(-5deg); }
+  .contact__submit {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #209fdb;
+    color: white;
+    cursor: pointer; }
+    .contact__submit:hover {
+      background-color: #223f6a; }
+
 @media screen and (max-width: 800px) {
   .mountain__logo-box {
     position: absolute;
@@ -225,6 +297,9 @@ body {
   .mountain__heading {
     font-size: 1.7rem;
     margin-bottom: 0rem; }
+  .mountain__logo {
+    width: 90%;
+    margin-top: 5%; }
   .bird__text {
     font-size: 1.7rem; }
   .bird__span--2 {
@@ -266,4 +341,6 @@ body {
     font-size: 2.5rem;
     position: absolute;
     top: 63%;
-    left: 57%; } }
+    left: 57%; }
+  .contact__submit {
+    left: 33%; } }
